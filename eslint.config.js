@@ -24,14 +24,14 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      "react/jsx-no-target-blank": "off",
+      "react/jsx-no-target-blank": "warn",
       "react-refresh/only-export-components": [
-        "off",
+        "warn",
         { allowConstantExport: true },
       ], // React Fast Refresh 규칙
       "prettier/prettier": "warn", // Prettier 규칙 (포매팅 오류를 에러로 표시)
       "react/prop-types": "off",
-      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
     },
     settings: {
       react: {

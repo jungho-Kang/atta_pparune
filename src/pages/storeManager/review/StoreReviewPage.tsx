@@ -65,7 +65,7 @@ function StoreReviewPage(): JSX.Element {
   // 댓글쓰기 버튼
   const [isClick, setIsClick] = useState(false);
   // 댓글 정보
-  const [_coment, setComent] = useState("");
+  const [coment, setComent] = useState("");
   // 수정하기 버튼
   const [edit, setEdit] = useState(false);
   const [review, setReview] = useState<ReviewData>();
@@ -121,6 +121,10 @@ function StoreReviewPage(): JSX.Element {
   useEffect(() => {
     console.log("가져온 데이터??", review);
   }, [review]);
+
+  useEffect(() => {
+    console.log("댓글 내용", coment);
+  }, [coment]);
 
   return (
     <div>
